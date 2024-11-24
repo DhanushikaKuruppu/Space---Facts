@@ -1,0 +1,95 @@
+/* style.css */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* More playful font */
+    background: linear-gradient(45deg, #FF61D8, #FFF94C, #4FF2FF, #FF8B4C);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    transform: translateY(-20px);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 3em;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    25% { color: #ffff00; }
+    50% { color: #00ff00; }
+    75% { color: #00ffff; }
+    100% { color: #ff0000; }
+}
+
+.fact-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+.fact-box:hover {
+    transform: rotate(1deg) scale(1.02);
+}
+
+#factDisplay {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 60px;
+    color: #333;
+}
+
+#newFactBtn {
+    background: linear-gradient(45deg, #FF512F, #FF9900);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#newFactBtn:hover {
+    background: linear-gradient(45deg, #FF9900, #FF512F);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+#newFactBtn:active {
+    transform: translateY(1px);
+}
