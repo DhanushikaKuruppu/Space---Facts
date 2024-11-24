@@ -1,2 +1,2 @@
-# Space---Facts
+# Space-Facts
 Random facts about space
